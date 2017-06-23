@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+<meta charset='UTF-8'>
+<script src='lib1/flexible/flexible.js'></script>
+<script src='lib1/flexible/flexible_css.js'></script>
+<link rel='stylesheet' href='css/base.css'>
+<link rel="stylesheet" href="css/px2rem.css">
+<link rel='stylesheet' href='css/moneyproduct.css'>
+ <title>moneyproduct1.html</title>
+</head>
+<body>
+    <header id="header" class="header clearfix">
+        <div class="aaa f-left">
+            <a href="moneyctrl.html"> <span> < </span> </a>
+        </div>
+        <span>国内折扣</span>
+        <div class="app">
+            <a href="#" title="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+   
+    <main id="product-main">
+        <div class="content clearfix">
+            <!--<div class="title"><h1>safhdfjsfhjsfhsdhfsdb大部分哈佛</h1></div>
+            <div class="info"><span class="mall">asdf|sdfsad</span></div>
+            <div class="text1 f-left">
+
+            </div>
+            <div class="tp1"><img src="" alt=""></div>
+            <div class="text2"></div>
+            <div class="tp2"><img src="" alt=""></div>-->
+        </div>
+        <div class="center">
+            "<ul id="disstorck">
+                <li>
+                    <a href="javascript:;" onclick="setdiqu('北京','有货')">
+                        <span class="clearfix">北京<strong>有货</strong></span>
+                    </a>
+                </li>
+            </ul>"
+        </div>
+        <div class="gm">
+            <a href="#"><button type="button">前往购买</button></a>
+        </div>
+        <div class="tp3">
+            <div><img src="images/mmbweixin2.png" alt=""></div>
+        </div>
+        <!--<div class="pl">
+            <div>发表评论</div>
+            <div class="kkz">
+                <div class="kk"></div>
+                <button>发表评论</button>
+            </div>
+            <div>最新评论</div>
+
+        </div>-->
+        <div class="pl">
+            
+        
+        "<div class="cu-content-pl ui-border-t">
+      <div class="tit">发表评论</div>
+      <div class="reply">
+        <div class="form">
+        <textarea name="ctl00$ContentBody$txt_nr" id="ctl00_ContentBody_txt_nr" rows="3"></textarea>
+                            <input name="ctl00$ContentBody$lbl_fbr" id="ctl00_ContentBody_lbl_fbr" value="手机端网友14***154" type="hidden">
+                            <input name="ctl00$ContentBody$hid_name" id="ctl00_ContentBody_hid_name" value="移动端凑单品：海天 鲜味 生抽 1.28L" type="hidden">
+                            <div class="ctrl">
+                              <input name="ctl00$ContentBody$Button1" value="发表评论" id="ctl00_ContentBody_Button1" class="tjdp" type="submit">
+          </div>
+        </div>
+      </div>
+      <div class="tit" id="newcomment">最新评论</div>
+      <div class="list clearfix">
+        <ul class="clearfix">
+         <li class="ui-border-b clearfix"><div class="userimg"><img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg"></div><div class="con"><div class="name clearfix"><div class="username">赶鸭子上架</div> <div class="time">2016/10/25 14:18:45</div></div><div class="content">比超市便宜了几块</div></div></li>
+        </ul>
+      </div>
+    </div>"
+    </div>
+    </main>
+
+    
+    
+
+    <footer id="foot">
+        <div class="foot1">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;" id="db">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="20" height="20">返回顶部
+            </a>
+        </div>
+        <div class="foot2">
+            <p>
+                <a href="#" style="color:red">手机APP下载</a>
+                <a href="#">慢慢买手机版--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+<script src="lib1/art/template.js"></script>
+<script src = "lib1/jquery/jquery-1.12.0.min.js"></script>
+<!--<script src="js/common.js"></script>-->
+<script src = "js/moneyproduct.js"></script>
+
+<script id="tpl1" type="text/html">
+{{each result as item}}
+    <div class="title"><h1>{{item.productName}}</h1></div>
+    <div class="info">
+        <span>{{item.productFrom}}</span>
+        <span>{{item.productTime}} </span>
+        <span>{{item.productTips}}</span>
+        </div>
+    <div class="tp1 f-right">{{#item.productImgSm}}</div>
+    <div class="text1"><p>{{item.productInfo}}</p></div>
+    <div class="text2"><p>{{item.productInfo1}}</p></div>
+    <div class="tp2">{{#item.productImgLg}}</div>
+{{/each}}
+</script >
+
+<!--<script id="tpl2" type="text/html">
+{{each result as item}}
+    <div>{{#item.productImg2}}</div>
+{{/each}}
+</script>-->
+
+
+</html>

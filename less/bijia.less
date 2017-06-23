@@ -1,0 +1,188 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+body{
+    background: white;
+}
+#product{
+    height: .906667rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    border-top: .026667rem solid #ebebeb;
+    border-bottom: .026667rem solid #ccc;
+    line-height: .96rem;
+    padding-left: .213333rem;
+    .font-size(14);
+    >nav{
+        position: relative;
+         
+    }
+}
+nav{
+    .font-size(16);
+    background: #efefef;
+   line-height: .906667rem;
+   background-image: linear-gradient(to bottom,#fff,#ccc);
+}
+.title .select{
+    position: absolute;
+    right: .266667rem;
+    button{       
+        width: 1rem;
+        height: .666667rem;
+        border-radius: .133333rem;
+        .font-size(16);
+    }
+}
+
+// 比价菜单页
+.d1{
+    padding: .266667rem;
+    .font-size(16);
+    color: #000;
+    >.d22{
+        text-align: center;
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
+// 比价购买 产品参数 评价
+    .shop{
+        display: flex;
+        // border-top: 1px solid #b8b8b8;
+        // border-bottom: 1px solid #b8b8b8;
+        height: .853333rem;
+        line-height: .853333rem;
+        >a{
+            flex: 1;
+            background: #ffc31c;
+            // width: 33%;
+           box-sizing: border-box;
+           float: left;
+           text-align: center;
+            border:.026667rem solid #c74400;
+            .font-size(16);
+            color: white;
+        }
+    }
+    .jd{
+        height: 1.173333rem;
+        line-height: 1.173333rem;
+        border-bottom: .013333rem solid gray;
+        div{
+            display: inline-block;
+        }
+        .left{
+            img{
+                vertical-align: middle;
+            }
+            .sp2{
+                .font-size(15);
+                color: #000;
+            }
+        }
+        .right{
+            float: right;
+            .sp3{
+                color: #d91010;
+            }
+            .sp4{
+                // display: inline-block;
+                width: .68rem;
+                height: .32rem;
+                // background: #ff5500;
+            }
+        }
+    }
+    .jg{
+        display: block;
+        border-bottom: .053333rem solid #676767;
+        height:1.333333rem;
+        .font-size(14);
+    }
+    .pj{
+        margin-top: .133333rem;
+        height: .586667rem;
+        text-align: center;
+        line-height: .586667rem;
+        background:#dbdbdb;
+        .pj1{
+            .font-size(16);
+            color: #000;
+        }
+    }
+
+
+
+
+    .product-com-list {
+         > ul {
+             >li {
+                 .font-size(12);
+                 color: #666;
+                 padding: .133333rem;
+                 padding-bottom: 0px;
+                 line-height:.4rem;
+                 margin-top: .04rem;
+                 border-bottom: .013333rem solid #ccc;
+             }
+         }
+     }
+
+     .com-content {
+     line-height: .4rem;
+     padding-top: .066667rem;
+     .font-size(14);
+ }
+
+
+
+ .morein {
+    display: block;
+    height: .56rem;
+    background-color: #d4d4d4;
+    border-bottom: .013333rem solid #bababa;
+    border-radius: .066667rem;
+    text-align: center;
+    .font-size(14);
+    line-height: .56rem;
+    overflow: hidden;
+    color: #000;
+}
+// 搜索区域
+#search{
+     padding: .133333rem;
+    background-color: #fff;
+    >form{
+        position: relative;
+        padding-right:1.866667rem;
+        >input[type="search"] {
+            width: 100%;
+            -webkit-appearance: none;
+            border: none;
+            background: #f1f1f1;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            font-size: .346667rem;
+            padding-right: .666667rem;
+            padding-left: .266667rem;
+        }
+        >input[type="button"] {
+            position: absolute;
+            -webkit-appearance: none;
+            width: 1.68rem;
+            background: #ff841d;
+            color: #FFFFFF;
+            border: none;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            top: 0px;
+            right: 0px;
+            font-size: .426667rem;
+        }
+    }
+}

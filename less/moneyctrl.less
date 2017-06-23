@@ -1,0 +1,162 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+// 商品列表
+#product{
+    background: white;
+}
+// 灰色的线
+#product li{
+    border-bottom: .013333rem solid gray;
+}
+a{
+    display: block;
+    position: relative;
+}
+
+.pic {
+    float: left;
+    width: 25%;
+    padding: .266667rem;
+    
+    >img {
+        width: 100%;
+    }
+}
+.title{
+    .font-size(16);
+    padding-top: .133333rem;
+    padding-bottom: .666667rem;
+    
+}
+.other{
+    position: relative;
+    bottom: 0;
+}
+.info{
+    float: left;
+    width: 75%;
+    // padding-left: 2.133333rem;
+}
+.mall{
+    .font-size(12);
+}
+.comment{
+    .font-size(12);
+    // float: right;
+    right: .133333rem;
+    bottom: .08rem;
+    position: absolute;
+}
+.more-bar{
+    text-align: center;
+    width: 100%;
+    .font-size(14);
+}
+.more-bar a{
+    border: .013333rem solid gray;
+    border-radius: .133333rem
+}
+// 黄色价格
+.title{
+    span{
+        color: #ff6c00;
+        display: inline;
+    }
+}
+
+
+// 搜索区域
+#search{
+     padding: .133333rem;
+    background-color: #fff;
+    >form{
+        position: relative;
+        padding-right:1.866667rem;
+        >input[type="search"] {
+            width: 100%;
+            -webkit-appearance: none;
+            border: none;
+            background: #f1f1f1;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            font-size: .346667rem;
+            padding-right: .666667rem;
+            padding-left: .266667rem;
+        }
+        >input[type="button"] {
+            position: absolute;
+            -webkit-appearance: none;
+            width: 1.68rem;
+            background: #ff841d;
+            color: #FFFFFF;
+            border: none;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            top: 0px;
+            right: 0px;
+            font-size: .426667rem;
+        }
+    }
+}
+
+// 头部标题
+#header{
+    text-align: center;
+}
+.aaa{
+    width: .4rem;
+    height: .4rem;
+}
+.aaa a span{
+    display: inline-block;
+    line-height: 1.306667rem;
+    width: .266667rem;
+    height: .266667rem;
+    color: white;
+}
+#header span{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.306667rem;
+    .font-size(20);
+    color: white;
+}
+
+// 上一页
+.page{
+    background: white;
+    // height: .6rem;
+    height: 1.333333rem;
+    span{
+        line-height: 1.333333rem;
+        display:inline-block;
+        width: 33%;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        padding:.066667rem;
+        padding-bottom: .133333rem;
+    }
+}
+.page span:first-child i,.page span:last-child i{
+    display: inline-block;
+    border: .013333rem solid #ededed;
+    background: #ededed;
+    width: 1.733333rem;
+    height: .666667rem;
+    line-height: .666667rem;
+   border-radius: .133333rem;
+}
+.selectbox select{
+    display: inline-block;
+    .font-size(18);
+    padding: .133333rem;
+    border: .013333rem solid gray;
+}
+.selectbox option{
+    .font-size(12);
+}

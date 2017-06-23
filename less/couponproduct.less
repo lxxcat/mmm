@@ -1,0 +1,140 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+// 商品列表
+#product{
+    background: white;
+}
+// 灰色的线
+#product li{
+    border-bottom: .013333rem solid gray;
+    position: relative;
+    a{
+        display:block;
+    }
+}
+
+.pic {
+    float: left;
+    width: 30%;
+    padding: .266667rem;
+    
+    >img {
+        width: 2.666667rem;
+        height: 2.133333rem;
+    }
+}
+.title{
+    .font-size(14);
+    padding-top: .133333rem;
+    padding-bottom: .666667rem;
+    
+}
+.other{
+    position: relative;
+    bottom: .4rem;
+    color: #ff6c00;
+
+}
+.info{
+    float: left;
+    width: 70%;
+}
+.mall{
+    position: absolute;
+    .font-size(12);
+    color: #ff6c00;
+}
+.more-bar{
+    text-align: center;
+    width: 100%;
+    .font-size(12);
+}
+.more-bar a{
+    border: .013333rem solid gray;
+    border-radius: .133333rem
+}
+// 黄色价格
+.title{
+    p{
+       color: #000;
+       font-weight: bold;
+    }
+}
+
+// 箭头
+.jt{
+    a{
+        .font-size(30);
+        color: gray;
+    }
+    position: absolute;
+    right: .133333rem;
+    bottom: .666667rem;
+
+}
+
+
+// 头部标题
+#header{
+    background: #f4483e;
+}
+.txt{
+    background: #fff;
+    height: .933333rem;
+    line-height: .933333rem;
+    text-align: center;
+    color: #999;
+}
+
+// 遮罩层
+.layer1{
+    width: 100%;
+    height: 100%;
+    position: fixed;/*基于浏览器来的*/
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.5;
+    // display: none
+}
+.img1{
+    z-index: 999;
+    height: 5.333333rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -2.666667rem;
+        margin-top: -2.666667rem;
+        // display: none;
+        img{
+            width: 5.333333rem;
+            height: 5.333333rem;
+        }
+        .sp1{
+            position: absolute;
+            font-size: 2.666667rem;
+            left: -2rem;
+            top: 1.333333rem;
+            color: white;
+        }
+        .sp2{
+            position: absolute;
+            font-size: 2.666667rem;
+            right: -2rem;
+            top: 1.333333rem;
+            color: white
+        }
+        .sp3{
+            position: absolute;
+            position: absolute;
+            font-size: .933333rem;
+            right: .266667rem;
+            top: 0;
+        }
+       
+    }
+.h{
+    display: none;
+}

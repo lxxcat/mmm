@@ -1,0 +1,227 @@
+@charset 'utf-8';
+body {
+  background: white;
+}
+#product {
+  height: .906667rem;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: .026667rem solid #ebebeb;
+  border-bottom: .026667rem solid #ccc;
+  line-height: .96rem;
+  padding-left: .213333rem;
+  font-size: 14px;
+}
+[data-dpr='2'] #product {
+  font-size: 28px;
+}
+[data-dpr="3"] #product {
+  font-size: 42px;
+}
+#product > nav {
+  position: relative;
+}
+nav {
+  font-size: 16px;
+  background: #efefef;
+  line-height: .906667rem;
+  background-image: linear-gradient(to bottom, #fff, #ccc);
+}
+[data-dpr='2'] nav {
+  font-size: 32px;
+}
+[data-dpr="3"] nav {
+  font-size: 48px;
+}
+.title .select {
+  position: absolute;
+  right: .266667rem;
+}
+.title .select button {
+  width: 1rem;
+  height: .666667rem;
+  border-radius: .133333rem;
+  font-size: 16px;
+}
+[data-dpr='2'] .title .select button {
+  font-size: 32px;
+}
+[data-dpr="3"] .title .select button {
+  font-size: 48px;
+}
+.d1 {
+  padding: .266667rem;
+  font-size: 16px;
+  color: #000;
+}
+[data-dpr='2'] .d1 {
+  font-size: 32px;
+}
+[data-dpr="3"] .d1 {
+  font-size: 48px;
+}
+.d1 > .d22 {
+  text-align: center;
+}
+.d1 > .d22 img {
+  width: 4rem;
+  height: 4rem;
+}
+.shop {
+  display: flex;
+  height: .853333rem;
+  line-height: .853333rem;
+}
+.shop > a {
+  flex: 1;
+  background: #ffc31c;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border: .026667rem solid #c74400;
+  font-size: 16px;
+  color: white;
+}
+[data-dpr='2'] .shop > a {
+  font-size: 32px;
+}
+[data-dpr="3"] .shop > a {
+  font-size: 48px;
+}
+.jd {
+  height: 1.173333rem;
+  line-height: 1.173333rem;
+  border-bottom: .013333rem solid gray;
+}
+.jd div {
+  display: inline-block;
+}
+.jd .left img {
+  vertical-align: middle;
+}
+.jd .left .sp2 {
+  font-size: 15px;
+  color: #000;
+}
+[data-dpr='2'] .jd .left .sp2 {
+  font-size: 30px;
+}
+[data-dpr="3"] .jd .left .sp2 {
+  font-size: 45px;
+}
+.jd .right {
+  float: right;
+}
+.jd .right .sp3 {
+  color: #d91010;
+}
+.jd .right .sp4 {
+  width: .68rem;
+  height: .32rem;
+}
+.jg {
+  display: block;
+  border-bottom: .053333rem solid #676767;
+  height: 1.333333rem;
+  font-size: 14px;
+}
+[data-dpr='2'] .jg {
+  font-size: 28px;
+}
+[data-dpr="3"] .jg {
+  font-size: 42px;
+}
+.pj {
+  margin-top: .133333rem;
+  height: .586667rem;
+  text-align: center;
+  line-height: .586667rem;
+  background: #dbdbdb;
+}
+.pj .pj1 {
+  font-size: 16px;
+  color: #000;
+}
+[data-dpr='2'] .pj .pj1 {
+  font-size: 32px;
+}
+[data-dpr="3"] .pj .pj1 {
+  font-size: 48px;
+}
+.product-com-list > ul > li {
+  font-size: 12px;
+  color: #666;
+  padding: .133333rem;
+  padding-bottom: 0px;
+  line-height: .4rem;
+  margin-top: .04rem;
+  border-bottom: .013333rem solid #ccc;
+}
+[data-dpr='2'] .product-com-list > ul > li {
+  font-size: 24px;
+}
+[data-dpr="3"] .product-com-list > ul > li {
+  font-size: 36px;
+}
+.com-content {
+  line-height: .4rem;
+  padding-top: .066667rem;
+  font-size: 14px;
+}
+[data-dpr='2'] .com-content {
+  font-size: 28px;
+}
+[data-dpr="3"] .com-content {
+  font-size: 42px;
+}
+.morein {
+  display: block;
+  height: .56rem;
+  background-color: #d4d4d4;
+  border-bottom: .013333rem solid #bababa;
+  border-radius: .066667rem;
+  text-align: center;
+  font-size: 14px;
+  line-height: .56rem;
+  overflow: hidden;
+  color: #000;
+}
+[data-dpr='2'] .morein {
+  font-size: 28px;
+}
+[data-dpr="3"] .morein {
+  font-size: 42px;
+}
+#search {
+  padding: .133333rem;
+  background-color: #fff;
+}
+#search > form {
+  position: relative;
+  padding-right: 1.866667rem;
+}
+#search > form > input[type="search"] {
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  background: #f1f1f1;
+  height: .8rem;
+  line-height: .8rem;
+  border-radius: .666667rem;
+  font-size: .346667rem;
+  padding-right: .666667rem;
+  padding-left: .266667rem;
+}
+#search > form > input[type="button"] {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 1.68rem;
+  background: #ff841d;
+  color: #FFFFFF;
+  border: none;
+  height: .8rem;
+  line-height: .8rem;
+  border-radius: .666667rem;
+  top: 0px;
+  right: 0px;
+  font-size: .426667rem;
+}

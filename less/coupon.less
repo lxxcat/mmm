@@ -1,0 +1,30 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+
+#header{
+    background: #f4483e;
+}
+.center a{
+    display: block;
+}
+.center{
+    background: white;
+    .center1{
+        padding: .373333rem 0 .373333rem .133333rem;
+        .kfc{
+            padding: .133333rem;
+            border: .026667rem solid #efefef;
+            width: 32%;
+            float: left;
+            text-align: center;
+            margin-right: .12rem;
+            img{
+                width: 1.333333rem;
+                height: 1.333333rem;
+               
+            }
+        }
+    }
+}

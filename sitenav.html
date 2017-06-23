@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+<meta charset='UTF-8'>
+<script src='lib1/flexible/flexible.js'></script>
+<script src='lib1/flexible/flexible_css.js'></script>
+<link rel='stylesheet' href='css/base.css'>
+<link rel="stylesheet" href="css/px2rem.css">
+<link rel="stylesheet" href="css/count.css">
+<link rel="stylesheet"  href="css/sitenav.css">
+
+ <title>sitenav1.html</title>
+</head>
+<body>
+    <header id="header" class="header clearfix">
+        <div class="aaa f-left">
+            <a href="index.html"> <span> < </span> </a>
+        </div>
+        <span>商城导航</span>
+        <div class="app">
+            <a href="#" title="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+   
+  <section id="center" class="clearfix">
+      <div class="center1">
+          <a href="#">
+            <img src="images/slogo.png" alt="">
+            <i>京东商城</i>
+          </a>    
+      </div>
+  </section>
+    
+
+    <footer id="foot">
+        <div class="foot1">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;" id="db">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="20" height="20">返回顶部
+            </a>
+        </div>
+        <div class="foot2">
+            <p>
+                <a href="#" style="color:red">手机APP下载</a>
+                <a href="#">慢慢买手机版--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+<script src="lib1/art/template.js"></script>
+<script src = "lib1/jquery/jquery-1.12.0.min.js"></script>
+<script src = "js/sitenav.js"></script>
+
+<script id="tpl" type="text/html">
+{{each result as item}}
+    <a href="{{item.navHref}}">
+            <img src="{{item.navImg}}" alt="">
+            <i>{{item.navTitle}}</i>
+          </a>
+{{/each}}
+</script>
+
+</html>

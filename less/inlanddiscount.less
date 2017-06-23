@@ -1,0 +1,86 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+
+// 头部标题
+#header{
+    text-align: center;
+}
+.aaa{
+    width: .4rem;
+    height: .4rem;
+}
+.aaa a span{
+    display: inline-block;
+    line-height: 1.306667rem;
+    width: .266667rem;
+    height: .266667rem;
+    color: white;
+}
+#header span{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.306667rem;
+    .font-size(20);
+    color: white;
+}
+
+// 商品列表
+#product{
+    background: white;
+}
+// 灰色的xian
+#product li{
+    // border-bottom: .013333rem solid gray;
+    float: left;
+    width: 50%;
+    height: 7.066667rem;
+    
+}
+
+a{
+    display: block;
+    height: 100%;
+}
+// 图片的问题
+.pic {
+  
+    padding: .266667rem;
+    text-align: center;
+    >img {
+        width: 3.733333rem;
+        height: 3.733333rem;
+        
+    }
+}
+// 图片描述
+.title{
+    .font-size(14);
+    color: #000;
+    padding-top: .133333rem;
+    margin-bottom: .133333rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+.other{
+    position: relative;
+    bottom: 0;
+}
+.info{
+    margin: 0 auto;
+}
+.mall{
+    .font-size(12);
+    display: inline-block;
+    margin-top: .266667rem;
+}
+
+
+.jg{
+    color: #ff6c00;
+    display: inline-block;
+}

@@ -1,0 +1,122 @@
+@charset 'utf-8';
+#search {
+  padding: .133333rem;
+  background-color: #fff;
+}
+#search > form {
+  position: relative;
+  padding-right: 1.866667rem;
+}
+#search > form > input[type="search"] {
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  background: #f1f1f1;
+  height: .8rem;
+  line-height: .8rem;
+  border-radius: .666667rem;
+  font-size: .346667rem;
+  padding-right: .666667rem;
+  padding-left: .266667rem;
+}
+#search > form > input[type="button"] {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 1.68rem;
+  background: #ff841d;
+  color: #FFFFFF;
+  border: none;
+  height: .8rem;
+  line-height: .8rem;
+  border-radius: .666667rem;
+  top: 0px;
+  right: 0px;
+  font-size: .426667rem;
+}
+#cotegorn {
+  margin-bottom: .133333rem;
+}
+#cotegorn > .cote > ul > .li1 > a {
+  font-size: 16px;
+  height: 1.066667rem;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+  background-size: .8rem .213333rem;
+  line-height: 1.066667rem;
+  color: #000;
+  display: block;
+  padding-left: .426667rem;
+  border-bottom: .013333rem solid #ccc;
+  font-weight: bold;
+}
+[data-dpr='2'] #cotegorn > .cote > ul > .li1 > a {
+  font-size: 32px;
+}
+[data-dpr="3"] #cotegorn > .cote > ul > .li1 > a {
+  font-size: 48px;
+}
+#cotegorn > .cote > ul > .li1 > ul {
+  background: #f9f9f9;
+}
+#cotegorn > .cote > ul > .li1 > ul > li {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+}
+#cotegorn > .cote > ul > .li1 > ul > li > a {
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+}
+[data-dpr='2'] #cotegorn > .cote > ul > .li1 > ul > li > a {
+  font-size: 32px;
+}
+[data-dpr="3"] #cotegorn > .cote > ul > .li1 > ul > li > a {
+  font-size: 48px;
+}
+#cotegorn > .cote > ul > .li1 > ul > li {
+  border-right: .026667rem solid #ccc;
+  border-bottom: .026667rem solid #ccc;
+}
+#txt {
+  padding-left: .133333rem;
+  font-size: 16px;
+  line-height: .906667rem;
+  background-image: linear-gradient(#fff, #ccc);
+  border: .013333rem solid #c4c4c4;
+}
+[data-dpr='2'] #txt {
+  font-size: 32px;
+}
+[data-dpr="3"] #txt {
+  font-size: 48px;
+}
+#txt a {
+  font-size: 14px;
+  color: black;
+}
+[data-dpr='2'] #txt a {
+  font-size: 28px;
+}
+[data-dpr="3"] #txt a {
+  font-size: 42px;
+}
+#rm {
+  padding: .266667rem .133333rem;
+  background: white;
+}
+#rm div {
+  padding: .333333rem .266667rem;
+  border: .026667rem solid #c4c4c4;
+  background: #eeeeee;
+  font-size: 16px;
+  color: #843600;
+}
+[data-dpr='2'] #rm div {
+  font-size: 32px;
+}
+[data-dpr="3"] #rm div {
+  font-size: 48px;
+}

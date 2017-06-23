@@ -1,0 +1,28 @@
+@charset 'utf-8';
+#header {
+  text-align: center;
+}
+.aaa {
+  width: .4rem;
+  height: .4rem;
+}
+.aaa a span {
+  display: inline-block;
+  line-height: 1.306667rem;
+  width: .266667rem;
+  height: .266667rem;
+  color: white;
+}
+#header span {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.306667rem;
+  font-size: 20px;
+  color: white;
+}
+[data-dpr='2'] #header span {
+  font-size: 40px;
+}
+[data-dpr="3"] #header span {
+  font-size: 60px;
+}

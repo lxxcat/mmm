@@ -1,0 +1,33 @@
+@charset 'utf-8';
+#center {
+  background: white;
+  font-size: 20px;
+  padding: .266667rem 1.146667rem;
+}
+[data-dpr='2'] #center {
+  font-size: 40px;
+}
+[data-dpr="3"] #center {
+  font-size: 60px;
+}
+#center img {
+  width: .426667rem;
+  height: .426667rem;
+  vertical-align: middle;
+}
+#center .center1 {
+  width: 8.8rem;
+  height: 100%;
+}
+#center a {
+  float: left;
+  padding: .32rem .133333rem;
+  background: #f4f4f4;
+  border: .026667rem solid #b3b3b3;
+  margin-right: .266667rem;
+  margin-bottom: .266667rem;
+}
+#center i {
+  font-style: normal;
+  color: black;
+}

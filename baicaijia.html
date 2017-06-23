@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+<meta charset='UTF-8'>
+<script src='lib1/flexible/flexible.js'></script>
+<script src='lib1/flexible/flexible_css.js'></script>
+<link rel='stylesheet' href='css/base.css'>
+<link rel="stylesheet" href="css/px2rem.css">
+<link rel='stylesheet' href='css/baicaijia.css'>
+<link rel="stylesheet"  href="css/count.css">
+
+ <title>baicaijia1.html</title>
+</head>
+<body onload="loaded()">
+    <header id="header" class="header clearfix">
+        <div class="aaa f-left">
+            <a href="index.html"> <span> < </span> </a>
+        </div>
+        <span>白菜价-淘宝内部劵</span>
+        <div class="app">
+            <a href="#" title="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+   
+   <!--导航-->
+   <nav id="dh">
+       <div class="all" id="wapper">
+        <ul class="ul2">
+            </ul>
+       </div>
+   </nav>
+   <main id="main" class="clearfix">
+       <!--<div class="qb clearfix">
+            <div class="zb">
+                <a href="#">
+                    <div class="dimg"> 
+                        <img src="images/baicaiproduct.jpg" alt="">
+                        </div>
+                </a>
+            </div>
+            <div class="yb">
+                <div class="y1"><span class="b">[包邮]</span>双十一红包 今日开启</div>
+                <div class="y2">
+                    <i>卷后</i>
+                    <em>¥</em>0.0<del>¥0</del>
+                </div>
+                <div class="y3">
+                    <div class="bar clearfix"><a href="http://shop.m.taobao.com/shop/coupon.htm?activityId=27a14c9fc6bb4a48b917d567fcf8f664&amp;sellerId=2246833798" class="goquan" target="_blank"></a><i><em style="width:1%;"></em><span>1%</span></i><b>已领82张</b></div>
+                </div>
+                <div class="y4">
+                    <div class="y44">
+                        <a href="http://shop.m.taobao.com/shop/coupon.htm?activityId=27a14c9fc6bb4a48b917d567fcf8f664&amp;sellerId=2246833798" target="_blank">点此领15元优惠券</a>
+                    </div>
+                    <div class="y55">
+                        <a biz-itemid="56297410_8818824_54778388" isconvert="1" href="http://s.click.taobao.com/3HlIdQx" target="_blank">下单链接</a>
+                    </div>
+                </div>
+                                                              
+            </div>
+       </div>
+       -->
+      
+   </main>
+    
+
+    <footer id="foot">
+        <div class="foot1">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;" id="db">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="20" height="20">返回顶部
+            </a>
+        </div>
+        <div class="foot2">
+            <p>
+                <a href="#" style="color:red">手机APP下载</a>
+                <a href="#">慢慢买手机版--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+<script src="lib1/art/template.js"></script>
+<script src = "lib1/jquery/jquery-1.12.0.min.js"></script>
+<script src = "js/baicaijia.js"></script>
+<script src="lib1/iscroll/iscroll.js"></script>
+
+<script id="tpl" type="text/html">
+    
+        {{each result as item}}
+            <li><a href="#">{{item.title}}</a></li>
+            
+        {{/each}}
+    
+</script>
+
+
+
+<script type="text/html" id="tpl2">
+{{each result as i}}
+     <div class="qb clearfix">
+            <div class="zb">
+                <a href="#">
+                    <div class="dimg"> 
+                        {{#i.productImg}}
+                    </div>
+                </a>
+            </div>
+            <div class="yb">
+                <div class="y1">{{#i.productName}}</div>
+                <div class="y2">
+                    <i>卷后</i>
+                    {{#i.productPrice}}
+                </div>
+                <div class="y3">
+                    {{#i.productCouponRemain}}
+                </div>
+                <div class="y4">
+                    <div class="y44">
+                        {{#i.productCoupon}}
+                    </div>
+                    <div class="y55">
+                       {{#i.productHref}}
+                    </div>
+                </div>
+                                                              
+            </div>
+       </div>
+
+    {{/each}}
+</script>
+
+</html>

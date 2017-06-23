@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+<meta charset='UTF-8'>
+<script src='lib1/flexible/flexible.js'></script>
+<script src='lib1/flexible/flexible_css.js'></script>
+<link rel='stylesheet' href='css/base.css'>
+<link rel="stylesheet" href="css/px2rem.css">
+<link rel='stylesheet' href='css/moneyctrl.css'>
+
+ <title>moneyctrl1.html</title>
+</head>
+<body>
+    <header id="header" class="header clearfix">
+        <div class="aaa f-left">
+            <a href="index.html"> <span> < </span> </a>
+        </div>
+        <span>省钱控-最新优惠</span>
+        <div class="app">
+            <a href="#" title="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!--<section id="search">
+        <form>
+            <input type="search" name="" value="" placeholder="请输入你想比价的商品">
+            <input type="button" value="搜索">
+        </form>
+    </section>-->
+    
+    <main id="product">
+        <div class="product-list">
+            <!--<ul class="ullxx">-->
+            <!--<li class="clearfix ui-border-b">
+                <a href="moneyproduct.html?productid=20">
+                    <div class="pic"><img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L"></div>
+                    <div class="clearfix info">
+                        <div class="title">移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span></div>
+                        <div class="other"><span class="mall">京东商城 | 10-25 14:10</span><span class="comment"><i class="icon-comment"></i>1</span></div>
+                    </div>
+                </a>
+            </li>-->
+            <!--</ul>-->
+            <!--上一页 下一页-->
+            <!--<div class="p2">-->
+             <!--<div class="page clearfix">
+            <span><i>上一页</i></span>
+            <span>1/3</span>
+            <span><i>下一页</i></span>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </main>
+    
+    
+
+    <footer id="foot">
+        <div class="foot1">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;" id="db">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="20" height="20">返回顶部
+            </a>
+        </div>
+        <div class="foot2">
+            <p>
+                <a href="#" style="color:red">手机APP下载</a>
+                <a href="#">慢慢买手机版--掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+<script src="lib1/art/template.js"></script>
+<script src = "lib1/jquery/jquery-1.12.0.min.js"></script>
+<!--<script src="js/common.js"></script>-->
+<script src = "js/moneyctrl.js"></script>
+
+
+
+
+
+<script id="tpl2" type="text/html">
+
+        <ul>
+            {{each result as item}}
+        <li class="clearfix ui-border-b .product-list">
+                <a href="moneyproduct.html?productid={{item.productId}}">
+                    <div class="pic">{{#item.productImgSm}}</div>
+                    <div class="clearfix info">
+                        <div class="title">{{item.productName}}<span>{{item.productPinkage}}</span></div>
+                        <div class="other"><span class="mall">{{item.productFrom}} | {{item.productTime}}</span><span class="comment"><i class="icon-comment"></i>{{item.productComCount}}</span></div>
+                    </div>
+                </a>
+        </li>
+         {{/each}}
+        </ul>
+         <div class="page clearfix">
+            <span class="span1"><i>上一页</i></span>
+             <span class="selectbox"></span>
+            <span class="span2"><i>下一页</i></span>-->
+        </div>
+
+   
+</script>
+
+</html>

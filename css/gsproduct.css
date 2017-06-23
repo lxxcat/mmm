@@ -1,0 +1,130 @@
+@charset 'utf-8';
+.center a {
+  display: block;
+}
+.center .center1 {
+  padding: .373333rem 0 .373333rem .266667rem;
+}
+.center .center1 .kfc {
+  background: #fff;
+  padding: .133333rem;
+  float: left;
+  width: 48%;
+  margin-right: .133333rem;
+  margin-bottom: .133333rem;
+}
+.center .center1 .k1 {
+  text-align: center;
+}
+.center .center1 .k1 img {
+  width: 4rem;
+  height: 4rem;
+}
+.kdj {
+  text-align: center;
+  height: .466667rem;
+  overflow: hidden;
+}
+.cd span {
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #f5492e;
+}
+[data-dpr='2'] .cd span {
+  font-size: 32px;
+}
+[data-dpr="3"] .cd span {
+  font-size: 48px;
+}
+.cd button {
+  display: block;
+  float: right;
+  width: 1.466667rem;
+  height: .666667rem;
+  border-style: none;
+  background: #ff9501;
+  font-size: 16px;
+  color: white;
+  border-radius: .133333rem;
+}
+[data-dpr='2'] .cd button {
+  font-size: 32px;
+}
+[data-dpr="3"] .cd button {
+  font-size: 48px;
+}
+.gs-product {
+  background: white;
+  z-index: 10000;
+}
+.gs-product .list .hd .filter {
+  width: 100%;
+  height: .986667rem;
+  line-height: .986667rem;
+  border-bottom: .013333rem solid #ccc;
+}
+.gs-product .list .hd .filter ul {
+  display: flex;
+}
+.gs-product .list .hd .filter ul li {
+  flex: 1;
+  float: left;
+  text-align: center;
+}
+.gs-product .list .hd .filter ul li a {
+  font-size: 16px;
+  color: black;
+}
+[data-dpr='2'] .gs-product .list .hd .filter ul li a {
+  font-size: 32px;
+}
+[data-dpr="3"] .gs-product .list .hd .filter ul li a {
+  font-size: 48px;
+}
+.gs-product .list .hd .popsort {
+  position: absolute;
+  background-color: #ffffff;
+  line-height: .986667rem;
+}
+.gs-product .list .hd .popsort ul {
+  width: 10rem;
+}
+.gs-product .list .hd .popsort ul li {
+  border-bottom: .013333rem solid #ccc;
+}
+.gs-product .list .hd .popsort ul li a {
+  padding-left: .266667rem;
+  display: block;
+  font-size: 16px;
+  color: black;
+}
+[data-dpr='2'] .gs-product .list .hd .popsort ul li a {
+  font-size: 32px;
+}
+[data-dpr="3"] .gs-product .list .hd .popsort ul li a {
+  font-size: 48px;
+}
+.gs-product .list .hd .popcat {
+  position: absolute;
+  background-color: #ffffff;
+  height: .986667rem;
+  line-height: .986667rem;
+}
+.gs-product .list .hd .popcat ul {
+  width: 10rem;
+}
+.gs-product .list .hd .popcat ul li a {
+  padding-left: .266667rem;
+  font-size: 32px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
+  height: 78px;
+  display: inline-block;
+  width: 100%;
+}
+.h {
+  display: none;
+}

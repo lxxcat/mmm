@@ -1,0 +1,25 @@
+@charset 'utf-8';
+#header {
+  background: #f4483e;
+}
+.center a {
+  display: block;
+}
+.center {
+  background: white;
+}
+.center .center1 {
+  padding: .373333rem 0 .373333rem .133333rem;
+}
+.center .center1 .kfc {
+  padding: .133333rem;
+  border: .026667rem solid #efefef;
+  width: 32%;
+  float: left;
+  text-align: center;
+  margin-right: .12rem;
+}
+.center .center1 .kfc img {
+  width: 1.333333rem;
+  height: 1.333333rem;
+}

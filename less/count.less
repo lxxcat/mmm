@@ -1,0 +1,26 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+// 头部标题
+#header{
+    text-align: center;
+}
+.aaa{
+    width: .4rem;
+    height: .4rem;
+}
+.aaa a span{
+    display: inline-block;
+    line-height: 1.306667rem;
+    width: .266667rem;
+    height: .266667rem;
+    color: white;
+}
+#header span{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.306667rem;
+    .font-size(20);
+    color: white;
+}

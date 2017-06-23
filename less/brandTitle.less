@@ -1,0 +1,109 @@
+@charset 'utf-8';
+@themes: '.'; // 路径提取
+@import '@{themes}/px2rem';     // 导入换算 less
+@import '@{themes}/variable';   // 导入变量 less
+
+// 搜索区域
+#search{
+     padding: .133333rem;
+    background-color: #fff;
+    >form{
+        position: relative;
+        padding-right:1.866667rem;
+        >input[type="search"] {
+            width: 100%;
+            -webkit-appearance: none;
+            border: none;
+            background: #f1f1f1;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            font-size: .346667rem;
+            padding-right: .666667rem;
+            padding-left: .266667rem;
+        }
+        >input[type="button"] {
+            position: absolute;
+            -webkit-appearance: none;
+            width: 1.68rem;
+            background: #ff841d;
+            color: #FFFFFF;
+            border: none;
+            height: .8rem;
+            line-height: .8rem;
+            border-radius: .666667rem;
+            top: 0px;
+            right: 0px;
+            font-size: .426667rem;
+        }
+    }
+}
+
+
+// 列表区域
+#cotegorn{
+    margin-bottom: .133333rem;
+    >.cote{
+        >ul{
+            >.li1{
+                >a{
+                    .font-size(16);
+                    height: 1.066667rem;
+                    background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+                    background-size: .8rem .213333rem;
+                    line-height: 1.066667rem;
+                    color: #000;
+                    display: block;
+                    padding-left: .426667rem;
+                    border-bottom: .013333rem solid #ccc;
+                    font-weight: bold;
+                }
+                >ul{
+                    background: #f9f9f9;
+                    >li{
+                        width: 33.33%;
+                        float: left;
+                        text-align: center;
+                        height: 1.066667rem;
+                        line-height: 1.066667rem;
+                        >a{
+                            display: block;
+                            width: 100%;
+                            color: #333;
+                            .font-size(16);
+                        }
+                    }
+                    >li{
+                            border-right: .026667rem solid #ccc;
+                            border-bottom: .026667rem solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 首页 全部分类
+    #txt{
+         padding-left:.133333rem;
+        .font-size(16);
+        line-height: .906667rem;
+       background-image: linear-gradient(#fff, #ccc);
+        border: .013333rem solid #c4c4c4;
+       a{
+           .font-size(14);
+            color: black;
+       }
+    }
+    // 热门标题
+    #rm{
+        padding: .266667rem .133333rem;
+        background: white;
+        div{
+            padding: .333333rem .266667rem;
+            border: .026667rem solid #c4c4c4;
+            background: #eeeeee;
+            .font-size(16);
+            color: #843600;
+        }
+    }
